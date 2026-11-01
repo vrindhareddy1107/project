@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SR University</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f5f7fa;
+        }
+
+        /* Header */
+        header {
+            background-color: #082b59;
+            color: white;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 450px;
+            background: linear-gradient(
+                rgba(0, 30, 70, 0.7),
+                rgba(0, 30, 70, 0.7)
+            ),
+            url("https://images.unsplash.com/photo-1562774053-701939374585")
+            center/cover;
+
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .hero a {
+            background-color: #ffcc00;
+            color: #082b59;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Common Sections */
+        section {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #082b59;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        section p {
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        /* Courses */
+        .courses {
+            background-color: white;
+        }
+
+        .course-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .course-card {
+            background-color: #f0f4fa;
+            width: 250px;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ccc;
+        }
+
+        .course-card h3 {
+            color: #082b59;
+            margin-bottom: 15px;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
+        }
+
+        /* Facilities */
+        .facilities {
+            background-color: #e8eef7;
+        }
+
+        .facility-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .facility {
+            background-color: white;
+            padding: 25px;
+            width: 220px;
+            border-radius: 8px;
+        }
+
+        /* Admission */
+        .admission {
+            background-color: #082b59;
+            color: white;
+        }
+
+        .admission h2 {
+            color: #ffcc00;
+        }
+
+        .admission a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #ffcc00;
+            color: #082b59;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Contact */
+        .contact {
+            background-color: white;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #061d3b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Responsive Design */
+        @media(max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">SR UNIVERSITY</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#courses">Courses</a>
+            <a href="#facilities">Facilities</a>
+            <a href="#admission">Admissions</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <div class="hero" id="home">
+        <h1>Welcome to SR University</h1>
+        <p>Learn Today, Lead Tomorrow</p>
+        <a href="#about">Explore More</a>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About SR University</h2>
+
+        <p>
+            SR University is located in Ananthasagar, Hasanparthy,
+            Warangal, Telangana. It provides a learning environment
+            that encourages academic excellence, research,
+            innovation and practical knowledge.
+
+            The university focuses on developing skilled,
+            knowledgeable and responsible professionals.
+        </p>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <h2>Our Schools</h2>
+
+        <div class="course-container">
+
+            <div class="course-card">
+                <h3>Computer Science</h3>
+                <p>CSE, AI & ML, Cyber Security and Data Science.</p>
+            </div>
+
+            <div class="course-card">
+                <h3>Engineering</h3>
+                <p>Mechanical, Civil, ECE and Electrical Engineering.</p>
+            </div>
+
+            <div class="course-card">
+                <h3>Business</h3>
+                <p>Business management and entrepreneurship.</p>
+            </div>
+
+            <div class="course-card">
+                <h3>Agriculture</h3>
+                <p>Modern agriculture education and research.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="facilities" id="facilities">
+        <h2>Campus Facilities</h2>
+
+        <div class="facility-container">
+
+            <div class="facility">
+                <h3>📚 Library</h3>
+                <p>Books and digital learning resources.</p>
+            </div>
+
+            <div class="facility">
+                <h3>💻 Computer Labs</h3>
+                <p>Modern laboratories for practical learning.</p>
+            </div>
+
+            <div class="facility">
+                <h3>🏏 Sports</h3>
+                <p>Indoor and outdoor sports facilities.</p>
+            </div>
+
+            <div class="facility">
+                <h3>🏠 Hostel</h3>
+                <p>Accommodation facilities for students.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Admissions Section -->
+    <section class="admission" id="admission">
+        <h2>Admissions Open</h2>
+
+        <p>
+            Start your journey towards a successful career
+            with SR University.
+        </p>
+
+        <a href="https://sru.edu.in/admission/" target="_blank">
+            Apply Now
+        </a>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+
+        <p>
+            <b>Address:</b> Ananthasagar, Hasanparthy,
+            Warangal, Telangana - 506371
+        </p>
+
+        <p><b>Email:</b> info@sru.edu.in</p>
+
+        <p><b>Phone:</b> 0870-2818333</p>
+
+        <p>
+            <b>Website:</b>
+            <a href="https://sru.edu.in/" target="_blank">
+                www.sru.edu.in
+            </a>
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 SR University. All Rights Reserved.</p>
+        <p>Designed using HTML and CSS</p>
+    </footer>
+
+</body>
+</html>
